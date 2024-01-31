@@ -3485,7 +3485,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: none;
 }
 
 .fs-cc-manager_component {
@@ -3747,7 +3747,7 @@
   background-color: #f5f6ff;
   border-top: 1px solid rgba(67, 83, 255, .16);
   padding: 1.5rem 2rem;
-  display: none;
+  display: block;
   position: fixed;
   top: auto;
   bottom: 0%;
@@ -3779,6 +3779,10 @@
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.div-block {
+  display: none;
 }
 
 @media screen and (min-width: 1280px) {
