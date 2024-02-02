@@ -3598,7 +3598,7 @@
 }
 
 .fs-cc-components {
-  display: block;
+  display: none;
 }
 
 .fs-cc-prefs_content {
@@ -3747,7 +3747,7 @@
   background-color: #f5f6ff;
   border-top: 1px solid rgba(67, 83, 255, .16);
   padding: 1.5rem 2rem;
-  display: block;
+  display: none;
   position: fixed;
   top: auto;
   bottom: 0%;
@@ -3783,6 +3783,19 @@
 
 .div-block {
   display: none;
+}
+
+.fs-cc-banner_container-2 {
+  width: 100%;
+  max-width: 62.5rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.fs-cc-banner_trigger-2, .fs-cc-manager_trigger-2, .fs-cc-prefs_trigger-2 {
+  display: block;
 }
 
 @media screen and (min-width: 1280px) {
@@ -4501,6 +4514,11 @@
 
   .fs-cc-banner_text {
     margin-right: 0;
+  }
+
+  .fs-cc-banner_container-2 {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -5339,6 +5357,11 @@
 
   .fs-cc-prefs_title {
     font-size: 1.25rem;
+  }
+
+  .fs-cc-banner_container-2 {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
