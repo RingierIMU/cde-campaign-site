@@ -4339,6 +4339,16 @@
   font-weight: 500;
 }
 
+.link-block, .link-block-2, .link-block-3, .link-block-4 {
+  text-decoration: none;
+}
+
+.section-5 {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-top: 0;
+}
+
 @media screen and (min-width: 1280px) {
   .uui-padding-vertical-xhuge-6 {
     padding-bottom: 1rem;
