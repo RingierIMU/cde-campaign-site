@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Nov 18 2024 10:17:47 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Feb 24 2025 07:12:29 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6703d20efee6f064f7c92119" data-wf-site="655b66492a9c0558b79fb28d">
 <head>
   <meta charset="utf-8">
@@ -54,8 +54,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="https://slater.app/4593/8246.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+.itemname.filtertab.active {
+	background:#434DE6;
+  border-radius:20px;
+}
+.itemname.filtertab.active .tab-name{
+color:white;
+}
+.itemname.filtertab.active .text-block-17{
+color:white;
+}
+.itemname.filtertab.active .text-block-16{
+color:white;
+}
+.itemname.filtertab.active .div-block-38{
+background:white;
+border:1px solid white;
+}
+.itemname.filtertab.active .div-block-18{
+color:#374151;
+}
+.itemname.filtertab.active .text-span-3{
+color:white;
+}
+</style>
   <script>
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     //today
     const allBox = document.querySelectorAll(".pricing-plan-wrapper");
     const allBtn = document.querySelectorAll(".btns");
@@ -99,19 +124,19 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("No matching feature found for", feature);
         }
     }
-});
+});*/
 </script>
 </head>
 <body>
   <div class="page-wrapper">
     <div class="w-layout-blockcontainer navbar-box w-container">
       <div data-collapse="small" data-animation="default" data-duration="450" data-easing="ease-out-quart" data-easing2="ease-out-quart" role="banner" class="navbar-outer w-nav">
-        <div class="navbar-container">
-          <a href="#" class="navbar-logo-link w-nav-brand"><img src="images/CDE-logo-2.png" loading="lazy" width="51" sizes="(max-width: 479px) 30vw, 60px" alt="" srcset="images/CDE-logo-2-p-500.png 500w, images/CDE-logo-2-p-800.png 800w, images/CDE-logo-2-p-1080.png 1080w, images/CDE-logo-2-p-1600.png 1600w, images/CDE-logo-2-p-2000.png 2000w, images/CDE-logo-2.png 2048w" class="image-6"></a>
+        <div class="navbar-container sdc">
+          <a href="#" class="navbar-logo-link w-nav-brand"><img src="images/Frame.png" loading="lazy" width="51" alt="" class="image-6"></a>
           <nav role="navigation" class="navbar-menu overflow-hidden w-nav-menu">
-            <a href="#solve-challenge2" class="navbar-link w-nav-link">Solve A Business Challenge</a>
-            <a href="#faq" class="navbar-link w-nav-link">How it Works</a>
-            <a href="#tally-open=wgNYYd&amp;tally-layout=modal&amp;tally-width=600&amp;tally-hide-title=1&amp;tally-emoji-animation=none&amp;tally-auto-close=4000" class="primary-button w-button">Get Started</a>
+            <a href="#solve-challenge" class="navbar-link new-link w-nav-link">Solve A Business Challenge</a>
+            <a href="#faq" class="navbar-link new-link w-nav-link">How it Works</a>
+            <a href="#tally-open=wgNYYd&amp;tally-layout=modal&amp;tally-width=600&amp;tally-hide-title=1&amp;tally-emoji-animation=none&amp;tally-auto-close=4000" class="primary-button navbar-primary-button w-button">Sign Up</a>
           </nav>
           <div class="navbar_menu-button w-nav-button">
             <div class="menu-icon">
@@ -151,16 +176,24 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="star-icon"></div>
             </div>
             <div data-w-id="67b56c8b-d285-be91-d6c8-3f315fb08c1e" class="floating-block bottom-right">
-              <div class="text-block-9">Social Content Distribution</div>
+              <a href="#targetScroll" class="link-block-2 w-inline-block">
+                <div class="text-block-9">Social Content Distribution</div>
+              </a>
             </div>
             <div data-w-id="0e551fe0-f2f6-11a4-38a3-2e89529bc357" class="floating-block bottom-center">
-              <div class="text-block-9">Alerts</div>
+              <a href="#targetScroll" class="link-block-4 w-inline-block">
+                <div class="text-block-9">Alerting</div>
+              </a>
             </div>
             <div data-w-id="94b69fe4-ca55-ad2f-ba86-839703af58d4" class="floating-block bottom-left">
-              <div class="text-block-9">User Monetisation</div>
+              <a href="#targetScroll" class="link-block-3 w-inline-block">
+                <div class="text-block-9">User Monetisation</div>
+              </a>
             </div>
             <div data-w-id="0011db5a-46fe-ee89-eb9b-c4c49f6f0960" class="floating-block top-right">
-              <div class="text-block-9">Advanced SEO tools</div>
+              <a href="#targetScroll" class="link-block w-inline-block">
+                <div class="text-block-9">Advanced SEO tools</div>
+              </a>
             </div>
           </div>
         </div>
@@ -259,1209 +292,954 @@ document.addEventListener("DOMContentLoaded", function () {
             <h6 data-w-id="c1a8b9b3-708e-0d36-4909-0a53afbb8e54" style="opacity:0" class="welcome-head">Unlock the Full Potential of Your Digital Marketing</h6>
           </div>
           <div class="welcome-description">
-            <p data-w-id="c1a8b9b3-708e-0d36-4909-0a53afbb8e5a" style="opacity:0" class="welcome-para"><strong class="bold-text-6">Our suite of tools empowers your business with cutting-edge digital marketing capabilities, enabling you to amplify your reach, enhance customer engagement, and unlock new revenue streams. Each of our features is designed to optimize your content distribution and marketing strategies with precision and efficiency.</strong><br></p>
+            <p data-w-id="c1a8b9b3-708e-0d36-4909-0a53afbb8e5a" style="opacity:0" class="welcome-para"><strong class="bold-text-6">Our suite of tools empowers your business with cutting-edge digital marketing capabilities, enabling you to amplify your reach, enhance customer engagement, and unlock new revenue streams.</strong><br></p>
+            <p id="solve-challenge" class="welcome-para"><strong id="f" class="bold-text-6">Each of our features is designed to optimize your content distribution and marketing strategies with precision and efficiency.</strong><br></p>
           </div>
         </div>
       </div>
     </section>
-    <section id="targetScroll" class="filters">
-      <div id="solve-challenge2" class="w-embed w-script">
+    <section id="targetScroll" class="filters w-clearfix">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="filter-box-wrapper">
+          <div class="filter-select-fields"></div>
+          <div class="content-box">
+            <div class="left-content">
+              <div itemname="search_surge" class="itemname filtertab">
+                <div class="tab-button-2">
+                  <div class="tab-btn-name">
+                    <div class="tab-name">Search Surge</div>
+                    <div class="tab-seo-btn">
+                      <div class="text-block-17">Ideal for</div>
+                      <div class="div-block-38">
+                        <div class="text-block-18">SEO</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-btn-price">
+                    <div class="text-block-16"><span class="text-span-3">$1499</span> /month </div>
+                  </div>
+                </div>
+              </div>
+              <div itemname="social_pulse" class="itemname filtertab">
+                <div class="tab-button-2">
+                  <div class="tab-btn-name">
+                    <div class="tab-name">Social Pulse</div>
+                    <div class="tab-seo-btn">
+                      <div class="text-block-17">Ideal for</div>
+                      <div class="div-block-38">
+                        <div class="text-block-18">Performance Marketing</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-btn-price">
+                    <div class="text-block-16"><span class="text-span-3">$1499</span> /month </div>
+                  </div>
+                </div>
+              </div>
+              <div itemname="alert_stream" class="itemname filtertab">
+                <div class="tab-button-2">
+                  <div class="tab-btn-name">
+                    <div class="tab-name">Alert Stream</div>
+                    <div class="tab-seo-btn">
+                      <div class="text-block-17">Ideal for</div>
+                      <div class="div-block-38">
+                        <div class="text-block-18">User Retention</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-btn-price">
+                    <div class="text-block-16"><span class="text-span-3">$599</span> /month </div>
+                  </div>
+                </div>
+              </div>
+              <div itemname="market_edge" class="itemname filtertab">
+                <div class="tab-button-2">
+                  <div class="tab-btn-name">
+                    <div class="tab-name">Market Edge</div>
+                    <div class="tab-seo-btn">
+                      <div class="text-block-17">Ideal for</div>
+                      <div class="div-block-38">
+                        <div class="text-block-18">Monetisation</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-btn-price">
+                    <div class="text-block-16"><span class="text-span-3">$799</span> /month </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-content">
+              <div itemname="search_surge" class="tab-faq--wrapper itemname show">
+                <div class="tab-faq">
+                  <div class="tab-faq-section-top">
+                    <h3 class="tab-faq-top-main-text">Search Surge</h3>
+                    <p class="tab-faq-top-p">Elevate your search engine presence with advanced SEO tools that boost your performance.</p>
+                  </div>
+                  <div class="main-tab-faq">
+                    <h3 class="main-tab-faq-title">What you get?</h3>
+                    <div class="collapsed-content">
+                      <div notshow="ticketing,ecommerce" class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🚀</strong>Better Indexing</h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Monitor indexing performance and identify content that isn’t indexed yet. Reduce indexing time by up to 80% and double the amount of content Google indexes from your site.<br></p>
+                        </div>
+                      </div>
+                      <div notshow="media" class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text">📈Content Optimisation for Long Tail Search</h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Generate powerful, AI-driven content that enhances long-tail search performance and optimizes relevance for AI search platforms. Ensure every page is crafted to attract the right audience.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text">🗺️Dynamic Sitemaps</h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Generate real-time, bespoke sitemaps for listings, categories, articles, and topics, helping Google index your content faster and improve your visibility.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text">🎯️Smart Internal Linking</h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Automatically create internal links between search results, categories, and detail pages to enhance crawlability and distribute link equity. Use algorithmic logic to prioritize linking high-performing or trending pages.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text">🏆 Multi-Channel Distribution</h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Expand your reach by seamlessly integrating with Google News, Bing, and Google Merchant Center. Ensure your content is automatically submitted to relevant platforms like Google Shopping, increasing your visibility across high-traffic destinations with no extra work.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text">🛠️ Developer-Free SEO Enhancements</h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Abstract SEO logic from the site for easier updates and strategy iterations—no developer required.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="tab-faq--btn showusecases w-inline-block">
+                    <div class="text-block-19">View Use Cases</div><img src="images/Eye.png" loading="lazy" alt="" class="eye-icon">
+                  </a>
+                </div>
+                <div class="use-cases-div initiallyhidden">
+                  <div class="tab-faq-section-top tab-faq-section-top-2">
+                    <a href="#" class="tab-faq--btn whatyouget w-inline-block">
+                      <div class="text-block-19">What you get?</div>
+                      <h2 class="heading-10 heading-10-2"></h2>
+                    </a>
+                  </div>
+                  <div class="main-tab-faq main-tab-faq-2">
+                    <h3 class="main-tab-faq-title main-tab-faq-title-2">Use Cases for Search Surge</h3>
+                    <div class="collapsed-content div-block-41-2">
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2">Double the content you have indexed in under a month</h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div>
+                            <div class="faq-single-qus-part">
+                              <div class="faq-qut-title">The Problem:</div>
+                              <p class="faq-qus-p">Search Engines indexing of new content can be slow or even skipped, depending on your reputation. Often a website with a lot of content will only have<strong> 30-40% of it&#x27;s sitemaps indexed</strong></p>
+                            </div>
+                            <div class="faq-single-qus-part">
+                              <div class="faq-qut-title">The Solution</div>
+                              <p class="faq-qus-p">The CDE measures indexing performance of all your URLs and builds a feed of all content not yet indexed. This feed can be used to <strong>greatly increase indexation rates</strong> by sending it directly to search engine consoles or publishing it on your platform to show in carousels or internal links.</p>
+                            </div>
+                            <div class="faq-single-qus-part">
+                              <div class="faq-qut-title">The Result</div>
+                              <p class="faq-qus-p">Get close to<strong> 100% of your content indexed </strong>with dramatic increases over the first few weeks</p>
+                            </div>
+                          </div>
+                          <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                            <div class="tab-faq--btn whatyouget">
+                              <div class="text-block-19">See How You Can Do It</div><img src="images/Icon.png" loading="lazy" alt="" class="eye-icon">
+                            </div>
+                            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=vaSxiyIjy40",
+      "originalUrl": "https://youtube.com/watch?v=vaSxiyIjy40",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/vaSxiyIjy40/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FvaSxiyIjy40%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvaSxiyIjy40&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FvaSxiyIjy40%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2">Place 1st,2nd,3rd,4th and 5th for Long tail and AI searches</h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div>
+                            <div class="faq-single-qus-part">
+                              <div class="faq-qut-title">The Problem:</div>
+                              <p class="faq-qus-p">AI-driven search solutions, such as Google’s AI Overview and chat-based search, are changing the way content is ranked. These solutions primarily <strong>rewrite existing content</strong> rather than generating new insights, meaning they favor sources with structured and enriched data. Websites without long-tail optimized content struggle to rank highly in these evolving search results.<br><br>Additionally, traditional website pages often <strong>lack the depth of content needed</strong> to capture the full range of long-tail search terms. Without additional structured content, many relevant search queries fail to surface your pages in search engines.</p>
+                            </div>
+                            <div class="faq-single-qus-part">
+                              <div class="faq-qut-title">The Solution</div>
+                              <p class="faq-qus-p">The CDE <strong>automates AI-optimized content generation</strong>, transforming raw data into human-readable, indexable summaries. It creates <strong>new layers of structured content</strong>—such as enriched landing page summaries, average pricing trends, and editorial insights from sources like Wikipedia or POI catalogues. This <strong>significantly expands the range of keywords your site can rank for</strong>, improving search term visibility.</p>
+                            </div>
+                            <div class="faq-single-qus-part">
+                              <div class="faq-qut-title">The Result</div>
+                              <p class="faq-qus-p">Your pages rank <strong>higher for AI-driven search queries</strong>, significantly increasing visibility in <strong>long-tail and conversational search results</strong>. By generating additional content that wouldn&#x27;t typically exist on your site, you <strong>capture more search traffic</strong> and ensure broader coverage across search engines.</p>
+                            </div>
+                          </div>
+                          <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                            <div class="tab-faq--btn whatyouget">
+                              <div class="text-block-19">See How You Can Do It</div><img src="images/Icon.png" loading="lazy" alt="" class="eye-icon">
+                            </div>
+                            <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=epwJbz_HRWs",
+      "originalUrl": "https://youtube.com/watch?v=epwJbz_HRWs",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/epwJbz_HRWs/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FepwJbz_HRWs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DepwJbz_HRWs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FepwJbz_HRWs%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2"><strong>Ensure Your Articles Are Indexed Instantly with Automated XML Sitemaps</strong></h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div class="single-tab-faq-ans">
+                            <div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Problem:</div>
+                                <p class="faq-qus-p">Search engines rely on sitemaps to efficiently discover and index new content, yet many websites either lack proper sitemap updates or rely on <strong>manual processes</strong>, leading to delays in indexing. Without an up-to-date sitemap, <strong>articles and evergreen content</strong> may remain undiscovered, limiting their visibility in search and Google News.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Solution</div>
+                                <p class="faq-qus-p">The CDE <strong>automatically generates and maintains XML sitemaps</strong> for all article content on your platform. It creates both <strong>standard and Google News-specific sitemaps</strong>, ensuring search engines can promptly find and index your latest content. This process requires <strong>no manual intervention</strong>, keeping your site optimized at all times.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Result</div>
+                                <p class="faq-qus-p"><strong>Faster indexing of all articles</strong> across Google and Bing.<strong>No maintenance required</strong>, as sitemaps are dynamically updated in real-time.<strong>Improved visibility for evergreen content</strong>, classifieds, and e-commerce listings, increasing long-term traffic potential.</p>
+                              </div>
+                            </div>
+                            <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                              <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=yl7-C0jfFio",
+      "originalUrl": "https://youtube.com/watch?v=yl7-C0jfFio",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/yl7-C0jfFio/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fyl7-C0jfFio%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dyl7-C0jfFio&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fyl7-C0jfFio%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2"><strong>Easily Export Content in Any Format Without Developer Effort</strong></h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div class="single-tab-faq-ans">
+                            <div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Problem:</div>
+                                <p class="faq-qus-p">Marketing and product teams often need <strong>new feed types or custom exports</strong>, but the <strong>development time and resources required</strong> delay or deprioritize these initiatives. This leaves teams <strong>frustrated and unable to experiment</strong>, limiting agility and content distribution opportunities.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Solution</div>
+                                <p class="faq-qus-p">The CDE enables <strong>seamless content export</strong> in multiple formats through a <strong>single integration</strong>, eliminating the need for constant developer involvement. Teams can easily <strong>filter, customize, and generate feeds</strong> in widely used formats, including: RSS, JSON, CSV, XML.<br>New formats can be added as required, ensuring <strong>complete flexibility</strong> for different use cases.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Result</div>
+                                <p class="faq-qus-p"><strong>Faster, hassle-free content exports</strong>, reducing dependency on development teams.<strong>Increased adaptability</strong>, allowing teams to experiment with new channels and formats effortlessly.<strong>Efficient automation</strong>, ensuring content is always structured and ready for distribution.</p>
+                              </div>
+                            </div>
+                            <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                              <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=yl7-C0jfFio",
+      "originalUrl": "https://youtube.com/watch?v=yl7-C0jfFio",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/yl7-C0jfFio/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fyl7-C0jfFio%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dyl7-C0jfFio&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fyl7-C0jfFio%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div itemname="social_pulse" class="tab-faq--wrapper itemname initiallyhidden">
+                <div class="tab-faq">
+                  <div class="tab-faq-section-top">
+                    <h3 class="tab-faq-top-main-text">Social Pulse</h3>
+                    <p class="tab-faq-top-p">Amplify your marketing efforts with intelligent tools for content creation and distribution.</p>
+                  </div>
+                  <div class="main-tab-faq">
+                    <h3 class="main-tab-faq-title">What you get?</h3>
+                    <div class="collapsed-content">
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>📢 Multi-Channel Content Distribution</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Easily distribute your content to over 20 paid and social channels, including Facebook, Instagram, TikTok, and Google Ads. Ensure your content is always present, real-time, and tailored for every platform.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🤖 AI-Powered Content Creation</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Leverage AI to automatically generate, rewrite, and optimize text, images, and videos for each destination, including creating video content from image stills for all major social channels. Ensure brand consistency while targeting specific audiences with custom content.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>📊 Data-Driven Marketing</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Use business intelligence and customer metrics (like NPS scores, lead SLAs, subscription packages and more) to refine your distribution strategy. Tailor your content to drive engagement and meet performance targets.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🌐 Support for Major Platforms</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Connect with over 25 key social platforms as well as paid endpoints like Google Dynamic Ads, Meta Paid, Remarketers, and more. Expand your reach without additional manual effort.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🔄 End-to-End Automation</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Automate your entire content distribution process—from content generation to publishing—while maintaining complete control. Save time and scale effortlessly.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="tab-faq--btn showusecases w-inline-block">
+                    <div class="text-block-19">View Use Cases</div><img src="images/Eye.png" loading="lazy" alt="" class="eye-icon">
+                  </a>
+                </div>
+                <div class="use-cases-div initiallyhidden">
+                  <div class="tab-faq-section-top tab-faq-section-top-2">
+                    <a href="#" class="tab-faq--btn whatyouget w-inline-block">
+                      <div class="text-block-19">What you get?</div>
+                      <h2 class="heading-10 heading-10-2"></h2>
+                    </a>
+                  </div>
+                  <div class="main-tab-faq main-tab-faq-2">
+                    <h3 class="main-tab-faq-title main-tab-faq-title-2">Use Cases for Social Pulse</h3>
+                    <div class="collapsed-content div-block-41-2">
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2"><strong>Be Selective About Where You Spend Your Ad Budget</strong></h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div class="single-tab-faq-ans">
+                            <div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Problem:</div>
+                                <p class="faq-qus-p">Many campaigns <strong>allocate budgets uniformly</strong>, treating all content equally, even when some pieces naturally attract traffic while others struggle. This <strong>leads to overspending on high-performing content</strong> that doesn’t need additional promotion, while failing to support content that requires extra visibility.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Solution</div>
+                                <p class="faq-qus-p">The CDE enables <strong>smart budget allocation</strong> by dynamically managing multiple feeds across multiple campaigns. Instead of a <strong>one-size-fits-all</strong> approach, it <strong>optimizes ad spend</strong> by prioritizing underperforming content while reducing costs on content that already drives engagement organically.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Result</div>
+                                <p class="faq-qus-p"><strong>Improved ad efficiency</strong>, ensuring budget is spent where it delivers the most impact.<br>‍<strong>No wasted spend on content already performing well</strong>, maximizing return on investment.<br>‍<strong>Better outcomes from third-party traffic providers</strong>, focusing promotion on content that needs it most.</p>
+                              </div>
+                            </div>
+                            <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                              <div class="tab-faq--btn whatyouget">
+                                <div class="text-block-19">See How You Can Do It<br></div><img src="images/Icon.png" loading="lazy" alt="" class="eye-icon">
+                              </div>
+                              <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=WH-b_4Eoojk",
+      "originalUrl": "https://youtube.com/watch?v=WH-b_4Eoojk",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/WH-b_4Eoojk/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWH-b_4Eoojk%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWH-b_4Eoojk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWH-b_4Eoojk%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2"><strong>Auto Posting and Formatting for All Social Channels</strong></h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div class="single-tab-faq-ans">
+                            <div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Problem:</div>
+                                <p class="faq-qus-p">Manually adapting content for multiple social platforms is <strong>time-consuming and inefficient</strong>. Each platform has <strong>different format requirements</strong> for images, videos, and text, making it difficult to optimize content for maximum engagement. Platforms like <strong>TikTok, YouTube Shorts, and Instagram Reels require video content</strong>, which many businesses struggle to produce from existing assets.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Solution</div>
+                                <p class="faq-qus-p">The CDE uses <strong>Gen AI to automate content adaptation</strong> for every social endpoint. It <strong>auto-selects and crops images</strong> to fit each platform’s specifications, <strong>reformats text</strong> to match different engagement styles, and <strong>generates short-form videos from static images</strong>. This opens up new distribution opportunities on <strong>TikTok, YouTube Shorts, and Instagram Reels</strong>. With <strong>built-in automation</strong>, the CDE <strong>posts simultaneously across multiple platforms</strong>, ensuring content is optimized for every destination.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Result</div>
+                                <p class="faq-qus-p">Content is <strong>formatted perfectly for each platform</strong> without extra manual effort. Brands can <strong>expand their reach to video-first platforms</strong> without additional production costs. Posting across <strong>multiple social and paid channels</strong> becomes effortless, ensuring every piece of content is <strong>fully optimized and distributed at scale</strong>.</p>
+                              </div>
+                            </div>
+                            <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                              <div class="tab-faq--btn whatyouget">
+                                <div class="text-block-19">See How You Can Do It<br></div><img src="images/Icon.png" loading="lazy" alt="" class="eye-icon">
+                              </div>
+                              <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=QImFcLU-TqE",
+      "originalUrl": "https://youtube.com/watch?v=QImFcLU-TqE",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/QImFcLU-TqE/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FQImFcLU-TqE%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQImFcLU-TqE&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FQImFcLU-TqE%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2"><strong>Redistribution of Leads on a Marketplace</strong></h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div class="single-tab-faq-ans">
+                            <div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Problem:</div>
+                                <p class="faq-qus-p">Many businesses struggle with <strong>lead distribution inefficiencies</strong>, especially when <strong>smaller players are overshadowed</strong> by higher-paying competition. In marketplaces, small agencies or sellers often have <strong>less content and lower visibility</strong>, leading to <strong>a below-average lead volume</strong> and higher churn rates. Despite this, they remain important for <strong>content diversity and overall marketplace health</strong>.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Solution</div>
+                                <p class="faq-qus-p">The CDE applies <strong>complex, data-driven CPC feed logic</strong> to <strong>rebalance lead allocation</strong> across multiple segments. By <strong>identifying underperforming content</strong>, it <strong>prioritizes lead distribution</strong> to listings or businesses that need more exposure. A dedicated feed ensures that <strong>budget is specifically allocated</strong> to help smaller players compete while maintaining balanced overall performance.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Result</div>
+                                <p class="faq-qus-p">Small agencies or sellers see <strong>dramatic improvements in lead flow</strong>, with a <strong>700% increase in performance</strong> while maintaining cost efficiency. Marketplace balance is improved by <strong>ensuring lead diversity</strong> without increasing total budget allocation.</p>
+                              </div>
+                            </div>
+                            <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                              <div class="tab-faq--btn whatyouget">
+                                <div class="text-block-19">See How You Can Do It<br></div><img src="images/Icon.png" loading="lazy" alt="" class="eye-icon">
+                              </div>
+                              <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=9p6f2ObCXZU",
+      "originalUrl": "https://youtube.com/watch?v=9p6f2ObCXZU",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/9p6f2ObCXZU/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F9p6f2ObCXZU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9p6f2ObCXZU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F9p6f2ObCXZU%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq single-tab-faq-2 newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h2 class="heading-10 heading-10-2 faq-2-icon"></h2>
+                            <h4 class="single-tab-faq-qus-text single-tab-faq-qus-text-2"><strong>Facebook Multi-Page Strategy</strong></h4>
+                          </div>
+                          <h3 class="heading-11 heading-11-2">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <div class="single-tab-faq-ans">
+                            <div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Problem:</div>
+                                <p class="faq-qus-p">Many brands struggle to reach and engage niche audiences effectively. Posting to a single main page limits visibility, engagement, and the ability to <strong>target interest-based communities</strong>. Without a structured content distribution strategy, brands miss out on <strong>thousands of potential customer touchpoints across the web</strong>.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Solution</div>
+                                <p class="faq-qus-p">The CDE enables <strong>multi-page and multi-channel distribution</strong>, allowing content to be posted across <strong>hundreds or even thousands of audience-specific groups, pages, and platforms</strong>. In one case, running <strong>50 niche Facebook group pages alongside a main brand page</strong> generated <strong>33x more sessions and 9x more leads</strong> than using just a single page.By automating the creation and distribution of content across <strong>interest-based communities</strong>, such as real estate in specific districts, product enthusiasts, or local event-goers, the CDE ensures <strong>highly relevant content reaches the right people at scale</strong>. This strategy works beyond Facebook—<strong>it can be replicated across social platforms, forums, aggregators, and niche communities</strong>, expanding reach exponentially.</p>
+                              </div>
+                              <div class="faq-single-qus-part">
+                                <div class="faq-qut-title">The Result</div>
+                                <p class="faq-qus-p">Brands gain <strong>thousands of customer touchpoints</strong> across the web with <strong>no limit</strong> to the number of pages or groups that can be connected. Engagement increases while <strong>brand presence scales effortlessly</strong>, all with <strong>automated content distribution and zero additional staff overhead</strong>.</p>
+                              </div>
+                            </div>
+                            <a href="#" class="lightbox-link-2 w-inline-block w-lightbox">
+                              <script type="application/json" class="w-json">{
+  "items": [
+    {
+      "url": "https://youtube.com/watch?v=yl7-C0jfFio",
+      "originalUrl": "https://youtube.com/watch?v=yl7-C0jfFio",
+      "width": 940,
+      "height": 528,
+      "thumbnailUrl": "https://i.ytimg.com/vi/yl7-C0jfFio/hqdefault.jpg",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fyl7-C0jfFio%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dyl7-C0jfFio&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fyl7-C0jfFio%2Fhqdefault.jpg&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
+      "type": "video"
+    }
+  ],
+  "group": ""
+}</script>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div itemname="alert_stream" class="tab-faq--wrapper itemname initiallyhidden">
+                <div class="tab-faq">
+                  <div class="tab-faq-section-top">
+                    <h3 class="tab-faq-top-main-text">Alert Stream</h3>
+                    <p class="tab-faq-top-p">Keep your audience in the loop with this dynamic alerting and email platform. The service handles the matching of new content with saved alerts in real time, sending of instant alerts as well as batching and scheduling, and communication with third parties</p>
+                  </div>
+                  <div class="main-tab-faq">
+                    <h3 class="main-tab-faq-title">What you get?</h3>
+                    <div class="collapsed-content">
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🔔 Real-Time Alert Matching</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Automatically match user alerts with newly available content based on custom criteria, ensuring users receive the most relevant updates instantly.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>📈 Advanced Targeting Strategies</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Apply sophisticated, data-driven marketing strategies to maximize engagement and retention, far beyond human capacity.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🚫 Alert Deduplication</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Identify and eliminate duplicate content using custom rules, ensuring users only receive fresh and relevant alerts.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>⏰ Custom Triggering</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Set instant, hourly, daily, weekly, or monthly alerts with flexible rules. For example, send alerts only between 8 AM and 10 PM to avoid over-alerting.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>💰 Monetization Opportunities</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Promote matching listings within email alerts, creating new revenue streams and boosting conversions.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🔄 Flexible Matching</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Loosen matching criteria to ensure users receive useful content even when no exact matches are found, keeping them engaged.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="use-cases-div initiallyhidden">
+                  <div class="tab-faq-section-top tab-faq-section-top-2">
+                    <a href="#" class="tab-faq--btn whatyouget w-inline-block">
+                      <div class="text-block-19">What you get?</div>
+                      <h2 class="heading-10 heading-10-2"></h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div itemname="market_edge" class="tab-faq--wrapper itemname initiallyhidden">
+                <div class="tab-faq">
+                  <div class="tab-faq-section-top">
+                    <h3 class="tab-faq-top-main-text">Market Edge</h3>
+                    <p class="tab-faq-top-p">Unlock the full potential of your digital marketing efforts with a suite of tools designed to support Marketing as a Service</p>
+                  </div>
+                  <div class="main-tab-faq">
+                    <h3 class="main-tab-faq-title">What you get?</h3>
+                    <div class="collapsed-content">
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🌐 Multi-Platform Campaign Distribution</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Distribute content not only to your channels but also directly to your client’s pages, campaigns, and advertising platforms for maximum exposure.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>💡 Tailored Digital Marketing Solutions</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Offer your customers a fully customized digital marketing product by leveraging your buying power to be cost-effective while unlocking new, lucrative revenue streams.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>📈 Performance-Based Ad Spend</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Direct ad spend to high-performing listings and ensure every dollar drives sessions back to your platform, improving conversions and maximizing ROI.</p>
+                        </div>
+                      </div>
+                      <div class="single-tab-faq newfeature">
+                        <div class="single-tab-faq-qus">
+                          <div class="div-block-40">
+                            <h4 class="single-tab-faq-qus-text"><strong>🤝 Build Client Relationships</strong></h4>
+                          </div>
+                          <h3 class="heading-11">+</h3>
+                          <h2 class="heading-12"></h2>
+                        </div>
+                        <div class="single-tab-faq-ans">
+                          <p class="paragraph-21">Strengthen connections with clients by offering them value-added marketing services that extend beyond basic ad placements.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="use-cases-div initiallyhidden">
+                  <div class="tab-faq-section-top tab-faq-section-top-2">
+                    <a href="#" class="tab-faq--btn whatyouget w-inline-block">
+                      <div class="text-block-19">What you get?</div>
+                      <h2 class="heading-10 heading-10-2"></h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="solve-challenge2" class="code-embed-2 w-embed w-script">
         <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const allBox = document.querySelectorAll(".itemname");
-    const mydep = document.querySelectorAll(".mydep");
-    const allBtn = document.querySelectorAll(".filterbtn");
-    const features = document.querySelectorAll(".feature");
-    let mydepText;
-    for (let i = 0; i < allBtn.length; i++) {
-        allBtn[i].addEventListener("click", function () {
-         window.scrollTo({
-            top: document.getElementById('targetScroll').offsetTop + 80,
-            behavior: 'smooth'
-        });
-            for (let l = 0; l < allBtn.length; l++) {
-                allBtn[l].style.background = "#009fe3";
-            }
-            allBtn[i].style.background = "#ff5e69";
-            const getArray = this.getAttribute("filters").split(",");
-            for (let j = 0; j < allBox.length; j++) {
-                allBox[j].style.display = "none";
-            }
-            getArray.forEach(item => {
-                newDisplayer(item);
+		const initialyHidden = document.querySelectorAll(".initiallyhidden");
+    const filterBtns = document.querySelectorAll(".filter-btns");
+    initialyHidden.forEach(item=>{
+    	item.style.display = "none";
+    })
+    filterBtns.forEach((btn) => {
+        btn.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const filterBody = btn.querySelector(".filter-menu");
+            const isVisible = filterBody.style.display === "block";
+            document.querySelectorAll(".filter-menu").forEach(menu => {
+                menu.style.display = "none";
             });
+            filterBody.style.display = isVisible ? "none" : "block";
         });
-    }
-    for (let i = 0; i < mydep.length; i++) {
+    });    
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".filter-menu").forEach(menu => {
+            menu.style.display = "none";
+        });
+    });
+    const allBox = document.querySelectorAll(".itemname");
+    const mydep = document.querySelectorAll(".industrybtn");
+    const allBtn = document.querySelectorAll(".challengebtn");
+    const features = document.querySelectorAll(".newfeature");
+    const filterTab = document.querySelectorAll(".filtertab")
+    let mydepText;
+   for (let i = 0; i < allBtn.length; i++) {
+    allBtn[i].addEventListener("click", function () {
+        for (let l = 0; l < allBtn.length; l++) {
+            // allBtn[l].style.background = "#009fe3";
+        }
+        // allBtn[i].style.background = "#ff5e69";
+        const getArray = this.getAttribute("filters").split(",");
+        for (let j = 0; j < allBox.length; j++) {
+            allBox[j].style.display = "none";
+        }
+        getArray.forEach(item => {
+            newDisplayer(item);
+        });
+        const parentText = allBtn[i].closest(".filter-btns").querySelector(".tab-text");
+        const currentBtnText = allBtn[i].innerText;
+        parentText.innerText = currentBtnText;
+        const parent = this.closest(".filter-menu");
+        if (parent) {
+            parent.style.display = "none";
+        } else {
+            console.warn("No parent with class 'filter-menu' found.");
+        }
+        if (allBtn[i].innerText.trim() === "All") { 
+          initialyHidden.forEach(item=>{
+            item.style.display = "none";
+          })
+            filterTab.forEach(item => {                    
+                item.classList.remove("active");                        
+            });
+            filterTab[0].classList.add("active");
+            return;
+        } else {
+            filterTab.forEach(item => {
+                if (item.style.display === "block") {
+                    item.classList.add("active");
+                }
+            });
+        }
+        const filterBody = document.querySelectorAll(".filter-menu");
+       	filterBody.forEach(item=>{
+        	item.style.display = "none"
+        })        
+    });
+}
+for (let i = 0; i < mydep.length; i++) {
         mydep[i].addEventListener("click", function () {
-         window.scrollTo({
-            top: document.getElementById('targetScroll').offsetTop + 80,
-            behavior: 'smooth'
-        });
             mydepText = mydep[i].innerText;
+            // Reset background for all buttons (if needed)
             for (let l = 0; l < allBtn.length; l++) {
-                mydep[l].style.background = "#009fe3";
+                // mydep[l].style.background = "#009fe3";
             }
-            mydep[i].style.background = "#ff5e69";
+            // Highlight the clicked button (if needed)
+            // mydep[i].style.background = "#ff5e69";
             mydepText = mydep[i].innerText;
             const myTarget = mydep[i].getAttribute("feature");
-            features.forEach((item, i) => {
-                const notShowAttr = features[i].getAttribute("notShow");
+            features.forEach((item) => {
+                const notShowAttr = item.getAttribute("notShow");
                 if (notShowAttr) {
                     const getStringArray = notShowAttr.split(",");
                     if (getStringArray.includes(myTarget)) {
-                        features[i].style.display = "none";
+                        item.style.display = "none";
                     } else {
-                        features[i].style.display = "flex";
+                        item.style.display = "block";
                     }
                 } else {
-                    features[i].style.display = "flex";
+                    item.style.display = "block";
                 }
             });
+            const parentText = mydep[i].closest(".filter-btns").querySelector(".tab-text");
+            const currentBtnText = mydep[i].innerText;
+            parentText.innerText = currentBtnText;
+            console.log(currentBtnText);
+            const parent = mydep[i].closest(".filter-menu");
+            parent.style.display = "none";
         });
     }
     function newDisplayer(item) {
         for (let i = 0; i < allBox.length; i++) {
             if (item === allBox[i].getAttribute("itemname")) {
-                allBox[i].style.display = "flex";
+                allBox[i].style.display = "block";
             }
         }
     }
+    // view use case
+    const useCaseBtn = document.querySelectorAll(".showusecases");
+    const useGetBtn = document.querySelectorAll(".whatyouget");
+    useCaseBtn.forEach(item => {
+        item.addEventListener("click", () => {
+            const parent = item.closest(".tab-faq--wrapper");
+            const whatYouGet = parent.querySelector(".tab-faq");
+            const useCases = parent.querySelector(".use-cases-div");
+            whatYouGet.style.display = "none";
+            useCases.style.display = "block";
+        });
+    });
+    useGetBtn.forEach(item => {
+        item.addEventListener("click", () => {
+            const parent = item.closest(".tab-faq--wrapper");
+            const whatYouGet = parent.querySelector(".tab-faq");
+            const useCases = parent.querySelector(".use-cases-div");
+            whatYouGet.style.display = "block";
+            useCases.style.display = "none";
+        });
+    });
+    // filter
+    const filterTabs = document.querySelectorAll(".filtertab");
+    const contentWrappers = document.querySelectorAll(".tab-faq--wrapper");
+    filterTabs.forEach((item, idx) => {
+        item.addEventListener("click", () => {            
+            filterTabs.forEach(tab => tab.classList.remove("active"));
+            contentWrappers.forEach(content => (content.style.display = "none"));
+            contentWrappers[idx].style.display = "block";
+            item.classList.add("active");
+        });
+    });
+    if (filterTabs.length > 0) {
+        filterTabs[0].classList.add("active");
+        contentWrappers[0].style.display = "block";
+    }
 });
 </script>
-      </div>
-      <div id="Solve_challenge" class="sticky">
-        <div class="w-layout-blockcontainer main-container w-container">
-          <div class="filtering-btns">
-            <div class="btn-group">
-              <div class="btn-text">
-                <h2 data-w-id="b1d13227-6f46-a520-b0df-982103b0d3e1" style="opacity:0" class="heading-2">Choose your industry<br></h2>
-              </div>
-              <div class="btn-buttons">
-                <a feature="media" href="#" class="mydep w-button">Media</a>
-                <a feature="marketplace" href="#" class="mydep w-button">Marketplace</a>
-                <a feature="ecommerce" href="#" class="mydep w-button">E-commerce</a>
-                <a feature="ticketing" href="#" class="mydep w-button">Ticketing</a>
-                <a feature="any" href="#" class="mydep w-button">Any</a>
-              </div>
-            </div>
-            <div class="btn-group">
-              <div class="btn-text">
-                <h2 data-w-id="b1d13227-6f46-a520-b0df-982103b0d3f1" style="opacity:0" class="heading-2">Choose your business challenge<br></h2>
-              </div>
-              <div class="btn-buttons">
-                <a filters="search_surge,search_surge_uc" href="#" class="filterbtn w-button">SEO</a>
-                <a filters="social_pulse,social_pulse_uc" href="#" class="filterbtn w-button">Performance Marketing</a>
-                <a filters="alert_stream,alert_stream_uc" href="#" class="filterbtn w-button">User Retention</a>
-                <a filters="market_edge,market_edge_uc" href="#" class="filterbtn w-button">Monetisation</a>
-                <a filters="alert_stream,alert_stream_uc,social_pulse,social_pulse_uc,search_surge,search_surge_uc,market_edge,market_edge_uc" href="#" class="filterbtn w-button">All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="product-cards">
-          <div itemname="search_surge" class="product-card itemname">
-            <div class="package-name">
-              <div class="packge-name-icon">
-                <div class="name-icon">
-                  <h2 class="package-name-head">Search<br>Surge</h2>
-                </div>
-                <div class="package-icon"><img src="images/CDE-Icon-1.png" loading="lazy" sizes="(max-width: 479px) 38vw, 60px" srcset="images/CDE-Icon-1-p-500.png 500w, images/CDE-Icon-1-p-800.png 800w, images/CDE-Icon-1-p-1080.png 1080w, images/CDE-Icon-1.png 1182w" alt="" class="package-img"></div>
-              </div>
-              <div class="package-description">
-                <p class="package-des">Elevate your search engine presence with advanced SEO tools that boost your performance on long tail searches and optimise for new AI overview and chat based search</p>
-              </div>
-              <div class="package-price">
-                <h2 class="package-price-head">$1499 <span class="text-span-2">/month</span></h2>
-              </div>
-              <p class="package-des">20% discount if 2 or more modules taken</p>
-            </div>
-            <div class="package-features">
-              <div class="benefits">
-                <div class="benefit-heading">
-                  <h2 class="benefit-head">Benefits to your organization</h2>
-                </div>
-                <div class="benefit-box">
-                  <div class="benefit-item">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Increase Organic Traffic</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="benefit-item">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Substantially Decrease time to index content<br></h6>
-                      </div>
-                    </div>
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Double your indexed content in your sitemaps<br></h6>
-                      </div>
-                    </div>
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Build dynamic and powerful long tail search content<br></h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="what-you-get">
-                <div class="what-you-get-heading">
-                  <h2 class="benefit-head">What you get</h2>
-                </div>
-                <div class="accordian-items">
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d42d" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Tame Google<br></strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Tooling that is not available anywhere else!<br><br>Get access to a powerful monitoring tool that identifies indexing latency and highlights content that is not yet indexed, so Google bots can find it quicker. Decrease indexing time by up to 80% and increase the amount of content you have indexed two-fold</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d43b" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Long Tail and AI Search</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">The most advanced and bespoke content creation tool to optimise your website for long tail search.<br><br>Leverage powerful content generation to create content for your web pages that optimises performance on long tail searches and relevance to AI search platforms.<br></div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d449" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Real Time generation of sitemaps</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">This helps Google to find your content faster, including bespoke sitemaps for listings, category pages, articles, authors and topics.<br></div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="3a5eb20a-c76c-3948-d216-47ed7955324a" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Dedicated tooling for Media Content</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Google News XML sitemaps and Google News RSS feeds</div>
-                    </div>
-                  </div>
-                  <div notshow="marketplace,ecommerce,ticketing" class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d457" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Automatic submissions of content to Google pubsubhubbub</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d465" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Submission of content to Bing index</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div notshow="ticketing, media,ecommerce" class="feature-accordian feature new">
-                    <div data-w-id="5778e201-1900-c5ad-2ad3-494a8808f7b4" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Submission of Jobs classifieds listings to google indexing API</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div notshow="media" class="feature-accordian feature new">
-                    <div data-w-id="dd6fee73-9b50-04f9-a6ee-c8f4d6cf5fed" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Upload your product data to Google Merchant Centre</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">This makes it available for Google Shopping and other Google services</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="e8a65633-8558-abda-07bd-162283d835d0" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Elevate your EEAT Scores</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Combine with Social Pulse to elevate your EEAT with Google by distributing content across all major social platforms as well as Google News and other surfaces.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div itemname="social_pulse" class="product-card itemname">
-            <div class="package-name">
-              <div class="packge-name-icon">
-                <div class="name-icon">
-                  <h2 class="package-name-head"><strong>Social Pulse</strong></h2>
-                </div>
-                <div class="package-icon"><img src="images/CDE-Icon-1.png" loading="lazy" sizes="(max-width: 479px) 38vw, 60px" srcset="images/CDE-Icon-1-p-500.png 500w, images/CDE-Icon-1-p-800.png 800w, images/CDE-Icon-1-p-1080.png 1080w, images/CDE-Icon-1.png 1182w" alt="" class="package-img"></div>
-              </div>
-              <div class="package-description">
-                <p class="package-des">Amplify your social media impact with always on marketing, that allows you to connect marketing to business logic and applies powerful ML and AI applications.</p>
-              </div>
-              <div class="package-price">
-                <h2 class="package-price-head">$1499 <span class="text-span-2">/month</span></h2>
-              </div>
-              <p class="package-des">20% discount if 2 or more modules taken</p>
-            </div>
-            <div class="package-features">
-              <div class="benefits">
-                <div class="benefit-heading">
-                  <h2 class="benefit-head">Benefits to your organization</h2>
-                </div>
-                <div class="benefit-box">
-                  <div class="benefit-item">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Simplify and automate the manual process of content creation and distribution for greater scale</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="benefit-item">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Double, Triple, (Quadruple!) your social and paid performance</h6>
-                      </div>
-                    </div>
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Use advanced targeting to drive leads to specific content allowing you to ensure and maintain SLAs for content performance to your clients.</h6>
-                      </div>
-                    </div>
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Use business KPIs (like Customer NPS) to drive marketing distribution strategies</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="what-you-get">
-                <div class="what-you-get-heading">
-                  <h2 class="benefit-head">What you get</h2>
-                </div>
-                <div class="accordian-items">
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d49e" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Distribution to over 20 paid and social channels</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Intelligently select, transform and post your content like listings, articles and landing pages in real time to every major social and paid endpoint. Make sure that you are automatically and programmatically present on every surface that you can be, in real time and 24/7. </div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="c78649e9-bf8d-9960-cdf4-568ed3624d1d" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">AI Content Manipulation</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Text, image and video creation, rewriting, reformatting and end point optimisation.<br><br>Make sure that every piece of content you send to every destination is tailored to your brand voice and optimised for the audience that you are targeting.</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="2f445366-c44e-d91e-d3a3-b7fd972c2061" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Advanced technical marketing</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">The most advanced content selection tool to drive sending the right content, to the right endpoint, at the right time and in the right format. Driven by data and business rather than marketing metric driven strategies. <br><br>The ability to use business metrics to drive marketing activities. Use customer NPS scores to boost ailing customer performance, SLAs to manage what you send to paid channels, on site activity to drive what content you share to you socials and so much more. </div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="3732d018-ff37-119d-7782-b3b0f248012a" class="uui-faq04_question new feature">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Supporting Google Dynamic Display, Google App Campaigns, Google Dynamic Search,  Meta Paid, Remarketers (Criteo/RTB House/Vizury), Social (Facebook, X, Instagram, LinkedIn, Reddit, Telegram, TikTok, Google Business Profile, Pinterest, and YouTube), aggregators (Mitula, Trovit, Star et al)</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="5cf65151-8727-60e1-9844-f5cce4b7c6e0" class="uui-faq04_question new feature">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Built in a modular way so it is simple to add more destinations if required.</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div itemname="alert_stream" class="product-card itemname">
-            <div class="package-name">
-              <div class="packge-name-icon">
-                <div class="name-icon">
-                  <h2 class="package-name-head">Alert Stream</h2>
-                </div>
-                <div class="package-icon"><img src="images/CDE-Icon-1.png" loading="lazy" sizes="(max-width: 479px) 38vw, 60px" srcset="images/CDE-Icon-1-p-500.png 500w, images/CDE-Icon-1-p-800.png 800w, images/CDE-Icon-1-p-1080.png 1080w, images/CDE-Icon-1.png 1182w" alt="" class="package-img"></div>
-              </div>
-              <div class="package-description">
-                <p class="package-des">Keep your audience in the loop with PulsePoint, a dynamic alerting and email platform. The service handles the matching of new content with saved alerts in real time, sending of instant alerts as well as batching and scheduling, and communication with third parties.</p>
-              </div>
-              <div class="package-price">
-                <h2 class="package-price-head">$299 <span class="text-span-2">/month</span></h2>
-              </div>
-              <p class="package-des">20% discount if 2 or more modules taken</p>
-            </div>
-            <div class="package-features">
-              <div class="benefits">
-                <div class="benefit-heading">
-                  <h2 class="benefit-head">Benefits to your organization</h2>
-                </div>
-                <div class="benefit-box">
-                  <div class="benefit-item">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Lower cost of running the service internally, allowing  access to new features as they are built.</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="benefit-item">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Benefit from an often unused and powerful customer retention method, that is free to scale</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="what-you-get">
-                <div class="what-you-get-heading">
-                  <h2 class="benefit-head">What you get</h2>
-                </div>
-                <div class="accordian-items">
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d580" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Alert Matching</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Matching user alerts with content that comes online for the first time, based on custom criteria.</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d58e" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Advanced Strategies</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Ability to apply more technical marketing strategies than humans are capable of to your content distribution:</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d59c" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Alert Deduplication</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Identification of duplicate content based on custom rules.</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d5aa" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Custom Triggering</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Triggering instant / hourly / daily /weekly / monthly alerts with custom rules, e.g. send hourly alerts only from 8am to 10pm.</div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d5b8" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Monetisation</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Via the promotion of (matching) listings inside the email alerts.<br></div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="ebe2cf4d-384f-7d49-e82a-f6ed89e496f9" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Loose Matching</strong></div>
-                      </div>
-                      <div class="uui-faq04_icon-wrapper">
-                        <div class="accordion-icon_component">
-                          <div class="accordion-icon_horizontal-line"></div>
-                          <div class="accordion-icon_vertical-line"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="height:0px" class="uui-faq04_answer">
-                      <div class="bullet-text new">Loosening of the matching criteria when there is no exact match.<br></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div itemname="market_edge" class="product-card itemname">
-            <div class="package-name">
-              <div class="packge-name-icon">
-                <div class="name-icon">
-                  <h2 class="package-name-head">Market Edge</h2>
-                </div>
-                <div class="package-icon"><img src="images/CDE-Icon-1.png" loading="lazy" sizes="(max-width: 479px) 38vw, 60px" srcset="images/CDE-Icon-1-p-500.png 500w, images/CDE-Icon-1-p-800.png 800w, images/CDE-Icon-1-p-1080.png 1080w, images/CDE-Icon-1.png 1182w" alt="" class="package-img"></div>
-              </div>
-              <div class="package-description">
-                <p class="package-des">Unlock the full potential of your digital marketing efforts with a suite of tools designed to support Marketing as a Service.</p>
-              </div>
-              <div class="package-price">
-                <h2 class="package-price-head">$799 <span class="text-span-2">/month</span></h2>
-              </div>
-              <p class="package-des">20% discount if 2 or more modules taken</p>
-            </div>
-            <div class="package-features">
-              <div class="benefits">
-                <div class="benefit-heading">
-                  <h2 class="benefit-head">Benefits to your organization</h2>
-                </div>
-                <div class="benefit-box">
-                  <div class="benefit-item feature">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Ensure that sessions are sent to your site</h6>
-                      </div>
-                    </div>
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Direct ad spend to your listings<br></h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="benefit-item feature">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Build a closer relationship with clients</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="benefit-item feature">
-                    <div class="benefit-flex feature">
-                      <div class="benefit-item"><img src="images/1.svg" loading="lazy" alt="" class="benefit-icon"></div>
-                      <div class="benefit-item">
-                        <h6 class="benefit-item-head">Increased monetisation</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="what-you-get">
-                <div class="what-you-get-heading">
-                  <h2 class="benefit-head">What you get</h2>
-                </div>
-                <div class="accordian-items">
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d50f" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Ability to distribute to your, but also your client’s pages, campaigns and channels.</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feature-accordian feature new">
-                    <div data-w-id="b1d13227-6f46-a520-b0df-982103b0d51d" class="uui-faq04_question new">
-                      <div class="icon-with-head-accordian"><img src="images/Bullet.png" loading="lazy" width="20" alt="" class="cf-pricing-plan-tick-icon-2 new">
-                        <div class="uui-faq04_heading new"><strong class="bullet-text bold new">Leverage your buying power to be cost effective and offer a tailored Digital Marketing Product to all of your customers, unlocking brand new lucrative revenue streams</strong></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="case-study">
-          <div itemname="search_surge_uc" class="case-study-items itemname">
-            <div class="case-study-heading">
-              <h2 class="case-study-head">Use Cases for Search Surge</h2>
-              <p class="case-study-para">Click to find out how this can be used by you</p>
-            </div>
-            <div class="grid_2-4 vertical-mobile">
-              <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d95166-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Double the content you have indexed in under a month</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d95171-f7c92119" data-w-id="ba3486ef-8234-2ec8-7036-c4bc99d95171" style="opacity:0" class="card-outer">
-                        <div class="card-inner">
-                          <h3 class="h3">Taming Google and other search engines. Get them to crawl what you want them to, fast!</h3>
-                          <div class="spacer_xs"></div><img sizes="(max-width: 479px) 86vw, (max-width: 767px) 88vw, (max-width: 991px) 42vw, (max-width: 1439px) 44vw, 570.95703125px" srcset="images/google-crawler-p-500.webp 500w, images/google-crawler-p-800.webp 800w, images/google-crawler-p-1080.webp 1080w, images/google-crawler.webp 1600w" alt="" src="images/google-crawler.webp" loading="lazy" class="card-image">
-                          <p class="paragraph-2">Google indexing new content can be slow or even skipped, depending on your reputation. It is important to measure indexing performance.<br><br>The CDE can do this by monitoring your listing online time vs first appearance in Google indexes and report on missing and slow indexing. You can then build a feed of all content not yet indexed and send this back to your platform to show in carousels or internal links. Rank it by most popular to ensure fast moving content gets into Google as soon as possible.</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <h1 class="button-2 secondary">Learn More</h1>
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=kR0rcd5S4ZI",
-      "originalUrl": "https://youtube.com/watch?v=kR0rcd5S4ZI",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/kR0rcd5S4ZI/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FkR0rcd5S4ZI%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkR0rcd5S4ZI&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FkR0rcd5S4ZI%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d9517f-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Article XML sitemaps</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d9518a-f7c92119" data-w-id="ba3486ef-8234-2ec8-7036-c4bc99d9518a" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/Article-XML-sitemaps-p-500.png 500w, images/Article-XML-sitemaps-p-800.png 800w, images/Article-XML-sitemaps.png 952w" alt="" src="images/Article-XML-sitemaps.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong class="bold-text-14">Automated sitemap generated for all article content on your platform</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Ensure use of <strong>best practice</strong> sitemaps to ensure your articles are promptly discovered and indexed. Output both indexing site wide and Google News specific sitemaps.<br><br>This is relevant for any media content you have, including evergreen content from classifieds and e-commerce websites where this can be an important driver of traffic.<br><br>Kept up to date with <strong>no maintenance </strong>and Increase the likelihood that articles will be <strong>discovered</strong> and <strong>indexed</strong></p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d951a1-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Google News RSS</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d951ac-f7c92119" data-w-id="ba3486ef-8234-2ec8-7036-c4bc99d951ac" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/Google-news-RSS-p-500.png 500w, images/Google-news-RSS-p-800.png 800w, images/Google-news-RSS-p-1080.png 1080w, images/Google-news-RSS-p-1600.png 1600w, images/Google-news-RSS.png 1775w" alt="" src="images/Google-news-RSS.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3">To upload into <br>Google Publisher Center</h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2"><strong>Automatically</strong> update articles in Google services, to <strong>enhance</strong> <strong>visibility</strong> across all Google surfaces including <strong>Google News</strong>, <strong>Google Discover</strong> and the <strong>top stories carousel</strong> in relevant search results<br><br>With the CDE:<br>No dev for feed updates<br>Custom feed combinations</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=D0UnqGm_miA?si=sZjjIOAUqQlkrPpT",
-      "originalUrl": "https://youtube.com/watch?v=D0UnqGm_miA?si=sZjjIOAUqQlkrPpT",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/D0UnqGm_miA/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FD0UnqGm_miA%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DD0UnqGm_miA&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FD0UnqGm_miA%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d951d1-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Place 1st,2nd,3rd,4th and 5th for Long tail and AI searches</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_6eb73b0f-ce3f-96ce-6744-39a18f25248b-f7c92119" data-w-id="6eb73b0f-ce3f-96ce-6744-39a18f25248b" style="opacity:0" class="card-outer">
-                        <div class="card-inner">
-                          <h3 class="h3">Using AI rewrite data into human readable, indexable content.</h3>
-                          <div class="spacer_xs"></div><img sizes="(max-width: 479px) 86vw, (max-width: 767px) 88vw, (max-width: 991px) 42vw, (max-width: 1439px) 44vw, 570.99609375px" srcset="images/long-tail-keyword-finder-tools-p-500.jpeg 500w, images/long-tail-keyword-finder-tools-p-800.jpeg 800w, images/long-tail-keyword-finder-tools-p-1080.jpeg 1080w, images/long-tail-keyword-finder-tools.jpeg 1280w" alt="" src="images/long-tail-keyword-finder-tools.jpeg" loading="lazy" class="card-image">
-                          <p class="paragraph-2">AI Overview and Chat based search are on the rise and stand to disrupt traditional organic. These solutions primarily rewrite content, they do not perform calculations. You need to provide the calculations for them.<br><br>You can provide these services, and your users, interesting content based on your own data. e.g. landing page or seller summaries. Then combine it with hard data like average prices with editorial content pulled from e.g. wikipedia or POI catalogues.</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <h2 class="button-2 secondary">Learn More</h2>
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=i89wQcb-wmw",
-      "originalUrl": "https://youtube.com/watch?v=i89wQcb-wmw",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/i89wQcb-wmw/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fi89wQcb-wmw%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Di89wQcb-wmw&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fi89wQcb-wmw%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d951f5-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item feature">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Easily create feeds and file types in any format</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d95200-f7c92119" data-w-id="ba3486ef-8234-2ec8-7036-c4bc99d95200" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 621.015625px" srcset="images/A-guide-to-product-feeds-and-file-formats-for-different-channels-p-500.webp 500w, images/A-guide-to-product-feeds-and-file-formats-for-different-channels.webp 751w" alt="" src="images/A-guide-to-product-feeds-and-file-formats-for-different-channels.webp" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Filter and export your content in any format needed, without any extra work from your developers</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Often an <strong>ad hoc</strong> or new feed type would be great to have, but the effort and lead time to get it developed deprioritizes the initiative...Leaving marketing and product teams <strong>frustrated </strong>and unable to experiment.<br><br>Because the CDE relies on a <strong>single integration</strong>, adding new feed types, filtering them and customizing the content is simple and easy.   The CDE already supports:<br>RSS<br>JSON<br>CSV<br>XML<br><br> And new formats can be added as required.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d95223-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Experience, Expertise, Authoritativeness, Trust</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-ba3486ef-8234-2ec8-7036-c4bc99d9522e-f7c92119" data-w-id="ba3486ef-8234-2ec8-7036-c4bc99d9522e" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 621.015625px" srcset="images/EEAT-p-500.jpeg 500w, images/EEAT.jpeg 960w" alt="" src="images/EEAT.jpeg" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Generating content on your own site is great, but to really drive EEAT you need a strong ecosystem presence. </strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Google ranks you on EEAT, especially in high <br>stakes transactions like Jobs and Property. <br><br>While many channels like X, Instagram or Merchant Centre might not drive significant traffic, they are a metric used to build your reputation. The CDE is connected to all major social platforms as well as Google News and other surfaces. <br><br>Automatically reformat and distribute your listings and articles, at scale to create a cross destination reputation.</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <h2 class="button-2 secondary">Learn More</h2>
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=y2TBbWMi_1w",
-      "originalUrl": "https://youtube.com/watch?v=y2TBbWMi_1w",
-      "width": 940,
-      "height": 528,
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy2TBbWMi_1w&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy2TBbWMi_1w&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div itemname="social_pulse" class="case-study-items itemname">
-            <div class="case-study-heading">
-              <h2 class="case-study-head">Use Cases for Social Pulse</h2>
-              <p class="case-study-para">Click to find out how this can be used by you</p>
-            </div>
-            <div class="grid_2-4 vertical-mobile">
-              <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb92061b-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Be selective on what content you buy traffic for</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb920626-f7c92119" data-w-id="f8e8b648-4caa-3d23-2516-86c9eb920626" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/istockphoto-472289475-612x612-p-500.jpg 500w, images/istockphoto-472289475-612x612.jpg 612w" alt="" src="images/istockphoto-472289475-612x612.jpg" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Manage multiple feeds to multiple campaigns so you do not overspend on easy to promote listings.</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Often we measure CPL broadly and create campaigns and spend budgets uniformly. <br><br>Oversupplying leads to a small set of listings brings no value vs diversifying CPC targets. <br><br>Spend a little on everything but don&#x27;t waste money on content already likely to sell.<br><br>Make expensive third party traffic providers work for their money, only give them listings you are struggling to convert in other ways.</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <h2 class="button-2 secondary">Learn More</h2>
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=7eYDJ1AVJFo",
-      "originalUrl": "https://youtube.com/watch?v=7eYDJ1AVJFo",
-      "width": 940,
-      "height": 528,
-      "thumbnailUrl": "https://i.ytimg.com/vi/7eYDJ1AVJFo/hqdefault.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F7eYDJ1AVJFo%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7eYDJ1AVJFo&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F7eYDJ1AVJFo%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb92063b-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Redistribution of leads on a marketplace</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb920646-f7c92119" data-w-id="f8e8b648-4caa-3d23-2516-86c9eb920646" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/Redistribution-of-leads-on-marketplace-p-500.png 500w, images/Redistribution-of-leads-on-marketplace-p-800.png 800w, images/Redistribution-of-leads-on-marketplace-p-1080.png 1080w, images/Redistribution-of-leads-on-marketplace-p-1600.png 1600w, images/Redistribution-of-leads-on-marketplace-p-2000.png 2000w, images/Redistribution-of-leads-on-marketplace.png 2161w" alt="" src="images/Redistribution-of-leads-on-marketplace.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Using complex, data driven CPC feed logic to solve lead allocation</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">A property business has a churn problem with small agencies.  They have relatively little content compared to medium and large agencies, so get swamped out of leads with a well below average lead per listing compared to higher paying competition, but still remain a key client as bring diversity of content and reduce load on sales reengagement. <br><br>A CDE strategy is setup to promote all under performing listings as well as a separate feed with its own budget specifically focusing on small agents.<br><br>The overall performance and budget are balanced between multiple remarketing and paid distribution providers, but not increased, resulting in 700% improvement in performance for small agents.</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <h2 class="button-2 secondary">Learn More</h2>
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=Ekht0YGEY5M",
-      "originalUrl": "https://youtube.com/watch?v=Ekht0YGEY5M",
-      "width": 940,
-      "height": 528,
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FEkht0YGEY5M%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEkht0YGEY5M&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb920658-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item feature">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Facebook Multi Page Strategy</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_2199298d-3568-62af-b3ad-23c6c0e6e464-f7c92119" data-w-id="2199298d-3568-62af-b3ad-23c6c0e6e464" style="opacity:0" class="card-outer">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Optimising for engagement and building your brand</strong></h3>
-                          <div class="spacer_xs"></div><img loading="lazy" src="documents/send-multiple-facebook-groups.avif" alt="" class="card-image">
-                          <p class="paragraph-2">In this case, we found that running 50 niche facebook group pages, in parallel with a main brand page generated <strong>33x more sessions</strong> and <strong>9x more leads</strong> than just running the main page!<br><br>We did this by creating a suite of feeds in a matter of minutes that posted curated niche content to each brand group page. the group pages represented interest groups (eg apartments in a district of a city for rent OR Apple product lovers OR electro festival lovers in a country - you can mimic your website categories to create as many niche groups as you have activity on your site). For main page, we changed it to have a low volume frequency and to focus more on brand building content like highly curated articles and other evergreen content<br>‍<br>There is <strong>no limit</strong> to the number of pages you can connect and automate with no staff overhead required.<br><br><br>This can be replicated across all social channels to deliver enormous brand growth and substantial traffic to your site.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb9206a1-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Auto posting and formatting to all social channels</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb9206ac-f7c92119" data-w-id="f8e8b648-4caa-3d23-2516-86c9eb9206ac" style="opacity:0" class="card-outer">
-                        <div data-delay="4000" data-animation="slide" class="w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-                          <div class="w-slider-mask">
-                            <div class="w-slide"><img sizes="100vw" srcset="images/MicrosoftTeams-image-50-p-500.webp 500w, images/MicrosoftTeams-image-50-p-800.webp 800w, images/MicrosoftTeams-image-50-p-1080.webp 1080w, images/MicrosoftTeams-image-50.webp 1296w" alt="" src="images/MicrosoftTeams-image-50.webp" loading="lazy" class="card-image"></div>
-                            <div class="w-slide"><img sizes="100vw" srcset="images/Auto-posting-formatting-to-all-social-challenges-1--p-500.png 500w, images/Auto-posting-formatting-to-all-social-challenges-1--p-800.png 800w, images/Auto-posting-formatting-to-all-social-challenges-1--p-1080.png 1080w, images/Auto-posting-formatting-to-all-social-challenges-1--p-1600.png 1600w, images/Auto-posting-formatting-to-all-social-challenges-1--p-2000.png 2000w, images/Auto-posting-formatting-to-all-social-challenges-1-.png 2334w" alt="" src="images/Auto-posting-formatting-to-all-social-challenges-1-.png" loading="lazy" class="card-image"></div>
-                          </div>
-                          <div class="w-slider-arrow-left">
-                            <div class="w-icon-slider-left"></div>
-                          </div>
-                          <div class="w-slider-arrow-right">
-                            <div class="w-icon-slider-right"></div>
-                          </div>
-                          <div class="w-slider-nav w-round w-num"></div>
-                        </div>
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Leveraging Gen AI to auto select and crop images, format content and rewrite text for each destination</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Leverage AI tooling to post automatically and simultaneously to all social endpoints<br><br>Auto format content to customise for each endpoint, including text, image and video</p>
-                          <div class="spacer_m"></div>
-                          <a href="#" class="lightbox-link w-inline-block w-lightbox">
-                            <h2 class="button-2 secondary">Learn More</h2>
-                            <script type="application/json" class="w-json">{
-  "items": [
-    {
-      "url": "https://youtube.com/watch?v=-8X1EFSn1ok",
-      "originalUrl": "https://youtube.com/watch?v=-8X1EFSn1ok",
-      "width": 940,
-      "height": 528,
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F-8X1EFSn1ok%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-8X1EFSn1ok&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
-      "type": "video"
-    }
-  ],
-  "group": ""
-}</script>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb9206c5-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Create an Intelligent Feedback Loop</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb9206d0-f7c92119" data-w-id="f8e8b648-4caa-3d23-2516-86c9eb9206d0" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 621.015625px" srcset="images/Create-an-intellegent-feedback-loop-p-500.png 500w, images/Create-an-intellegent-feedback-loop-p-800.png 800w, images/Create-an-intellegent-feedback-loop-p-1080.png 1080w, images/Create-an-intellegent-feedback-loop.png 1096w" alt="" src="images/Create-an-intellegent-feedback-loop.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Build an internal, high-powered recommendation model to select content to send to specific endpoints</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Through correct tagging, all traffic coming from a CDE powered endpoint can be <strong>tracked</strong> down to the specific feed.<br><br>By combining this data with historical click through rate info, a recommendation model can be trained to <strong>predict</strong> the performance of an object on a specific endpoint.<br><br>This can be factored into future <strong>selection</strong> strategies where you send content most likely to perform to each endpoint.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb9206eb-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Facebook Dark Post Strategy</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-f8e8b648-4caa-3d23-2516-86c9eb9206f6-f7c92119" data-w-id="f8e8b648-4caa-3d23-2516-86c9eb9206f6" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 621.015625px" srcset="images/facebook-dark-1-p-500.png 500w, images/facebook-dark-1-p-800.png 800w, images/facebook-dark-1.png 877w" alt="" src="images/facebook-dark-1.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Promote posts instead of banners</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Dark posts <strong>aren’t visible</strong> to your followers<br><br>Can be <strong>promoted</strong> within Facebook ads campaigns leveraging all native targeting<br><br>Allows for constant <strong>fresh content<br><br>‍</strong>Often can be more effective than standard display</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div itemname="alert_stream" class="case-study-items itemname">
-            <div class="case-study-heading">
-              <h2 class="case-study-head">Use Cases for Alert Stream</h2>
-              <p class="case-study-para">Click to find out how this can be used by you</p>
-            </div>
-            <div class="grid_2-4 vertical-mobile">
-              <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff52fc-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Opt In Alerts</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5307-f7c92119" data-w-id="7850e382-5fa6-d167-668a-b22e3aff5307" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/OPT-in-Alerts-p-500.png 500w, images/OPT-in-Alerts-p-800.png 800w, images/OPT-in-Alerts-p-1080.png 1080w, images/OPT-in-Alerts-p-1600.png 1600w, images/OPT-in-Alerts-p-2000.png 2000w, images/OPT-in-Alerts.png 2198w" alt="" src="images/OPT-in-Alerts.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3">Ideal for saved searches and where the user wants to specify exactly the alerts they are interested in.</h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Opt in alerting allows users to <strong>specify </strong>the content and frequency of messages that suits them.The CDE removes the dev and infrastructure <strong>overhead </strong>of matching and sending instant / hourly / daily / weekly and  monthly alerts at scale, cost effectively.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5318-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Push Broadcast Strategy</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5323-f7c92119" data-w-id="7850e382-5fa6-d167-668a-b22e3aff5323" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/Push-broadcast-stratgey-p-500.png 500w, images/Push-broadcast-stratgey-p-800.png 800w, images/Push-broadcast-stratgey-p-1080.png 1080w, images/Push-broadcast-stratgey-p-1600.png 1600w, images/Push-broadcast-stratgey-p-2000.png 2000w, images/Push-broadcast-stratgey.png 2034w" alt="" src="images/Push-broadcast-stratgey.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>Sending content to all users even when they have not set specific alerts</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">If users are opted in for communication but do not set a specific alert, you still want to send them:<br>- Blog articles<br>- Special offers<br>- Marketing campaigns<br><br>The CDE supports all users, not just saved searches</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5338-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Chat, the next horizon for alerts</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5343-f7c92119" data-w-id="7850e382-5fa6-d167-668a-b22e3aff5343" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/Chat-the-enxt-horizon-for-alerts-p-500.png 500w, images/Chat-the-enxt-horizon-for-alerts-p-800.png 800w, images/Chat-the-enxt-horizon-for-alerts-p-1080.png 1080w, images/Chat-the-enxt-horizon-for-alerts-p-1600.png 1600w, images/Chat-the-enxt-horizon-for-alerts-p-2000.png 2000w, images/Chat-the-enxt-horizon-for-alerts.png 2294w" alt="" src="images/Chat-the-enxt-horizon-for-alerts.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3">The top chat providers have started adding channels and allowing free media alert posting</h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Still in its infancy, but Chat is likely to replace email as the preferred medium of communication for seekers.<br><br>Many chat providers are now transitioning beyond peer to peer communication, to support more business features included dedicated news and content channels.<br><br>Always on, and allowing your customers to re engage at their leisure, now is the time to start onboarding and experimenting with this new opportunity.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5354-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item feature">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Optimizing alert performance</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff535f-f7c92119" data-w-id="7850e382-5fa6-d167-668a-b22e3aff535f" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 621.015625px" srcset="images/Advanced-features-p-500.png 500w, images/Advanced-features-p-800.png 800w, images/Advanced-features.png 1071w" alt="" src="images/Advanced-features.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3">Optimizing<strong> </strong>alert performance involves complicated matching techniques which can be costly to build and operate.</h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">Automatically detect <strong>duplicate </strong>and reposted content to keep alerts fresh and relevant<br><br>Support for loose and fuzzy matching on <strong>thin content</strong> ensures there is always something to send<br><br>Include the option to promote <strong>paid content</strong> in alerts, bringing a new sellable product to your ratecard.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff537c-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item feature">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Push Segmented Strategy</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_7850e382-5fa6-d167-668a-b22e3aff5387-f7c92119" data-w-id="7850e382-5fa6-d167-668a-b22e3aff5387" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 621.015625px" srcset="images/Push-Segmented-strategy-p-500.png 500w, images/Push-Segmented-strategy-p-800.png 800w, images/Push-Segmented-strategy-p-1080.png 1080w, images/Push-Segmented-strategy-p-1600.png 1600w, images/Push-Segmented-strategy-p-2000.png 2000w, images/Push-Segmented-strategy.png 2023w" alt="" src="images/Push-Segmented-strategy.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3"><strong>A highly segmented approach requires more segments than a human could maintain.</strong></h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">For users on push who have not saved a specific alert, we can still send them regular, relevant messages.<br><br>Segments automatically created by the CDE <br>These correspond to user interests, based on how they are interacting with your site<br>This can result in 1000’s of possible segments, but you are in control of which are relevant to be sent to.<br>‍<br>Once enabled, the CDE automatically rotates segments and does continuous business hour broadcasts.</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div itemname="market_edge" class="case-study-items itemname">
-            <div class="case-study-heading">
-              <h2 class="case-study-head">Use Cases for Market Edge</h2>
-              <p class="case-study-para">Click to find out how this can be used by you</p>
-            </div>
-            <div class="grid_2-4 vertical-mobile">
-              <div id="w-node-_30dcc3ff-74e1-e4d4-95f4-3bf98f91d640-f7c92119" class="usecase_accordian feature">
-                <div class="wrap_accordion">
-                  <div class="faq-item flex">
-                    <a href="#" class="faq-question w-inline-block">
-                      <div><strong>Marketing as a service</strong></div>
-                      <div class="wrap_p-m">
-                        <div class="minus"></div>
-                        <div class="plus"></div>
-                      </div>
-                    </a>
-                    <div class="faq-answer">
-                      <div id="w-node-_30dcc3ff-74e1-e4d4-95f4-3bf98f91d64b-f7c92119" data-w-id="30dcc3ff-74e1-e4d4-95f4-3bf98f91d64b" style="opacity:0" class="card-outer"><img sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 47vw, (max-width: 1439px) 48vw, 620.99609375px" srcset="images/Digital-marketing-agency-in-south-africa-p-500.png 500w, images/Digital-marketing-agency-in-south-africa-p-800.png 800w, images/Digital-marketing-agency-in-south-africa.png 1080w" alt="" src="images/Digital-marketing-agency-in-south-africa.png" loading="lazy" class="card-image">
-                        <div class="card-inner">
-                          <h3 class="h3">Leverage your marketing expertise beyond your own brand and also create a new revenue stream</h3>
-                          <div class="spacer_xs"></div>
-                          <p class="paragraph-2">With our <strong>automation technology</strong>, you can offer this service at lower rates than dedicated seller marketers<br><br>Offer to distribute to your, but also the sellers pages, campaigns and channels<br><br>Leverage your buying power to be cost effective<br><br>Pitch it that you are experts in B2C marketing, because you are</p>
-                          <div class="spacer_m"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <section class="testimonial">
@@ -1471,9 +1249,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="testimonial-carousel">
           <div class="testimonial-contents-swiper myswiper">
-            <div id="w-node-f4a3eff1-dfe5-7596-50cd-870bc1d85e09-f7c92119" class="swiper-wrapper">
-              <div id="w-node-a4ea1dde-bf48-6203-91c4-3369cdd03929-f7c92119" class="swiper-slide">
-                <div id="w-node-a4ea1dde-bf48-6203-91c4-3369cdd0392a-f7c92119" class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
                   <p class="paragraph-8">CDE is a game changer. It saves time and allows you to do data-driven activities in segments where it is sometimes very difficult, even unachievable.<br></p>
                   <div class="flex-horizontal">
                     <div>
@@ -1483,8 +1261,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
               </div>
-              <div id="w-node-_192011cd-854d-eb57-2618-5a4c14afea14-f7c92119" class="swiper-slide">
-                <div id="w-node-a5f8699c-02c2-331e-237b-9d286d9407cc-f7c92119" class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
+              <div class="swiper-slide">
+                <div class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
                   <p class="paragraph-8">After using the Content Distribution Engine, I really appreciate its efficiency. It provides a spectrum of captions, each with a distinct and natural tone, simplifying the task of connecting with various audiences.</p>
                   <div class="flex-horizontal">
                     <div>
@@ -1494,8 +1272,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
               </div>
-              <div id="w-node-fe0f4937-5031-5458-d4e7-3b243a41141b-f7c92119" class="swiper-slide">
-                <div id="w-node-_65dc9cef-1f08-64b8-8eb2-ca87dd328e93-f7c92119" class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
+              <div class="swiper-slide">
+                <div class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
                   <p class="paragraph-8">It really saves time - we can focus more on creative or strategic tasks</p>
                   <div class="flex-horizontal">
                     <div>
@@ -1505,19 +1283,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
               </div>
-              <div id="w-node-_9a56d880-d08a-a645-54ca-46e8b00c9d46-f7c92119" class="swiper-slide">
-                <div id="w-node-_9a56d880-d08a-a645-54ca-46e8b00c9d47-f7c92119" class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
-                  <p class="paragraph-8">It really saves time - we can focus more on creative or strategic tasks</p>
-                  <div class="flex-horizontal">
-                    <div>
-                      <div class="text-100 bold color-accent-1 text-uppercase">Gabriela Zajacova</div>
-                      <div class="text-100 bold color-accent-1 text-uppercase">Marketing Specialist @ United Classifieds</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-a88d0d41-d415-fb40-cc1c-16115f22872f-f7c92119" class="swiper-slide">
-                <div id="w-node-acca0424-37fa-d2fb-c03d-3ffad7db9339-f7c92119" class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
+              <div class="swiper-slide">
+                <div class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
                   <p class="paragraph-8">Solid posts to save time</p>
                   <div class="flex-horizontal">
                     <div>
@@ -1527,8 +1294,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                 </div>
               </div>
-              <div id="w-node-dc3ed05e-b56c-e3dc-3b68-c3f452621c6c-f7c92119" class="swiper-slide">
-                <div id="w-node-e5671246-9859-5bf4-715c-56a8ff3cf09a-f7c92119" class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
+              <div class="swiper-slide">
+                <div class="card content-left testimonial-v1"><img alt="" src="images/stars-testimonials-brix-templates.svg" class="mg-bottom-24px">
                   <p class="paragraph-8">CDE has been a game changer for us. It&#x27;s not just a tool, it&#x27;s a strategic advantage that empowers us to reach our audience effectively and efficiently. This is a must-have for any modern marketing team!</p>
                   <div class="flex-horizontal">
                     <div>
@@ -1989,7 +1756,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
         <div class="div-block-9">
-          <div class="div-block-7"><img src="images/CDE-logo-2.png" loading="lazy" sizes="(max-width: 479px) 68vw, (max-width: 1279px) 70px, (max-width: 1439px) 5vw, 70px" srcset="images/CDE-logo-2-p-500.png 500w, images/CDE-logo-2-p-800.png 800w, images/CDE-logo-2-p-1080.png 1080w, images/CDE-logo-2-p-1600.png 1600w, images/CDE-logo-2-p-2000.png 2000w, images/CDE-logo-2.png 2048w" alt="" class="image-7"></div>
+          <div class="div-block-7"><img src="images/CDE-logo-2.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 1279px) 70px, (max-width: 1439px) 5vw, 70px" srcset="images/CDE-logo-2-p-500.png 500w, images/CDE-logo-2-p-800.png 800w, images/CDE-logo-2-p-1080.png 1080w, images/CDE-logo-2-p-1600.png 1600w, images/CDE-logo-2-p-2000.png 2000w, images/CDE-logo-2.png 2048w" alt="" class="image-7"></div>
           <div class="div-block-8">
             <p class="copy-right">Copyright © 2024 Content Distribution Engine. All rights reserved.</p>
           </div>
